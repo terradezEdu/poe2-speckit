@@ -23,6 +23,10 @@ locations, bosses, combat mechanics, resistances, weaknesses, rewards, and Hardc
 - Q: What freshness promise should the first release make about its gameplay information? → A:
   A reviewed snapshot targeting the game version current during content research, clearly dated
   and updated through later reviewed releases.
+- Visual reference decision: The user approved R1/R2 and the accompanying first-release baseline
+  direction documented in research.md. Implementation may adapt panel layout and information
+  density as needed to preserve readability and usability. This is reference approval, not
+  acceptance of implemented visual milestones or permission to reuse reference artwork.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -271,10 +275,10 @@ reward, identify the benefit and its conditions where known, and locate a connec
   multiplayer features, and content editing interfaces are outside this feature.
 - **Map meaning**: The map represents campaign location relationships, not an exact terrain
   layout or a guarantee that every playthrough has identical generated geography.
-- **Visual dependency**: No visual references have been supplied or approved. The agent will
-  research and propose the reference set for human approval before visual implementation.
-  Functional and technical planning can proceed while this dependency is recorded; visual
-  acceptance also requires usable assets and the milestone reviews defined in FR-015.
+- **Visual dependency**: R1/R2 and the accompanying baseline direction in research.md were
+  approved by the user on 2026-10-16. Panel layout and information density may be adapted for
+  readability and usability. Visual acceptance still requires usable assets and the overview
+  and detail milestone reviews defined in FR-015.
 - **Content dependency**: The first snapshot targets the game version current when the research
   baseline is established. Identifiable sources are needed to select and populate the real
   segment; the target version, research baseline date, and review date are recorded with that

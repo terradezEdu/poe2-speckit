@@ -1,7 +1,9 @@
 # Contract: Map Exploration and Details
 
 Status: planned user interface contract. Applies to the three stories in [spec.md](../spec.md).
-Visual implementation depends on the unapproved [reference proposal](../research.md#4-visual-reference-proposal--awaiting-human-approval).
+Visual implementation follows the [approved baseline](../research.md#4-visual-reference-proposal--approved-baseline)
+(user approval 2026-10-16); panel layout and information density may adapt for readability
+and usability. Implemented overview/detail milestone approvals remain pending.
 
 ## Entry, navigation, and identity
 
@@ -30,7 +32,7 @@ connections, not generated terrain directions or in-game travel actions.
 | Drag empty terrain | Selection unchanged | Pan stage; do not activate a node on release |
 | Zoom control, wheel, or pinch on stage | Selection unchanged | Zoom within limits around the interaction anchor |
 | Overview | Selection unchanged | Fit included nodes and readable labels |
-| Close details, or Escape within map/details | Clear selection and details | Preserve camera; restore focus to latest origin without page scrolling |
+| Close details, or Escape within map/details | Clear selection and details | Preserve camera transform; restore focus to latest origin, scrolling the page only as much as needed to make returned focus visible |
 | Resize or change viewport orientation | Preserve selection and matching details | Preserve transform; update viewport bounds |
 | Retry a failed content load | Preserve any still-valid selection | Retain usable camera; ignore superseded request completion |
 

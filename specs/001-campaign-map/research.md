@@ -1,7 +1,7 @@
 # Research: Interactive Campaign Map
 
 Research baseline: 2026-10-16. Decisions support [spec.md](spec.md) and constitution v1.0.0.
-This document records planning evidence, a bounded content list, and an unapproved visual proposal.
+This document records planning evidence, a bounded content list, and the approved baseline visual direction.
 It is not a verified production dataset or a record of human visual approval.
 
 ## 1. Application and dependency baseline
@@ -128,35 +128,48 @@ Write original summaries and cite evidence. Source availability is not permissio
 prose, image assets, or bulk dataset. Preserve applicable attribution/permission records for any
 material actually reused. No source image is proposed as a distributable application asset.
 
-## 4. Visual reference proposal — awaiting human approval
+## 4. Visual reference proposal — approved baseline
 
-**Decision:** Propose R1 for overview atmosphere/composition and R2 for marker and information-panel
+**Human approval recorded: 2026-10-16.** The user approved the presented R1/R2 reference set
+and accompanying design direction as the baseline for the first release:
+
+> Approved as the baseline visual direction for the first release.
+> The implementation may adapt panel layout and information density as needed to preserve readability and usability
+
+This approval covers the reference roles, palette, typography, and proposed usability adaptations
+described below. Panel layout and information density may be adapted within this direction
+without requesting the same baseline approval again. Coverage gaps remain implementation and
+review considerations; they are not a pending reference-approval gate. Asset permissions and
+the later overview/detail visual milestone decisions remain separate and are not granted here.
+
+**Decision:** Use R1 for overview atmosphere/composition and R2 for marker and information-panel
 treatment. Both images were downloaded to a temporary inspection folder and viewed at their
 available resolution. No proprietary images have been added to the repository or approved for
 redistribution. These are historical appearance references, not evidence of current game facts.
 
 | ID | Concrete reference | Observed coverage | Limitations and status |
 |---|---|---|---|
-| R1 | [Overview image](https://volx.jp/wp-content/uploads/2024/12/path-of-exile-2-act1-map-list-2.jpg), [source page](https://volx.jp/path-of-exile-2-act1-map-list/) | 960 × 540; dense forest relief, muted olive/brown terrain, dark frame, blue circular markers, pale dotted path | Historical screenshot with Japanese annotations; ignore annotation typography. Proposed, unapproved. |
-| R2 | [Selected-location image](https://i.imgur.com/7rd970m.png), [first-hand forum post](https://www.pathofexile.com/forum/view-thread/3672899) | 1920 × 1080; aged-metal marker rims, warm title text, dark layered information plaque, map remains the dominant surface | Post dated 2024-12-30; includes third-party overlay and old repeated act tabs. Proposed, unapproved. |
+| R1 | [Overview image](https://volx.jp/wp-content/uploads/2024/12/path-of-exile-2-act1-map-list-2.jpg), [source page](https://volx.jp/path-of-exile-2-act1-map-list/) | 960 × 540; dense forest relief, muted olive/brown terrain, dark frame, blue circular markers, pale dotted path | Historical screenshot with Japanese annotations; ignore annotation typography. Approved baseline, 2026-10-16. |
+| R2 | [Selected-location image](https://i.imgur.com/7rd970m.png), [first-hand forum post](https://www.pathofexile.com/forum/view-thread/3672899) | 1920 × 1080; aged-metal marker rims, warm title text, dark layered information plaque, map remains the dominant surface | Post dated 2024-12-30; includes third-party overlay and old repeated act tabs. Approved baseline, 2026-10-16. |
 
 Inspection SHA-256: R1 dccbc1ccce7f56b26a2e2e3de7c8146ae9ce603562dc8c3078835485ff6e5147;
 R2 84e512afb53ef15e3fac3cd4fad9dfb6475a0d9a36926c68e64d11309b6009eb.
 The hashes identify inspected material if remote files change; temporary local copies are not
 required repository artifacts.
 
-**Provisional design direction:** Give the map the dominant area; retain landscape structure,
+**Approved baseline design direction:** Give the map the dominant area; retain landscape structure,
 rivers/forest masses, subdued ground colors, distinct markers, and restrained metal framing.
 Use original illustrated terrain, not a uniform dark surface behind generic cards. Companion
 details need greater reading space than the game's hover plaque. A nonmodal desktop side panel
-and narrow-screen panel below the map are proposed adaptations, not approved reference matches.
+and narrow-screen panel below the map are approved baseline adaptations; panel layout and
+information density may change as needed for readability and usability.
 
-Provisional palette, authored rather than sampled: lampblack #100F0C, forest #34382A, aged brass
+Baseline palette, authored rather than sampled: lampblack #100F0C, forest #34382A, aged brass
 #AA9063, bone #E7D7B0, waypoint blue #70B6D6, warning ember #BA6455. Check contrast and calibrate
 against the approved references before committing visual values.
 
-Propose Cinzel for restrained location titles and Source Sans 3 for readable encounter text,
-subject to reference approval. Self-host approved font files with their original license notices:
+Use Cinzel for restrained location titles and Source Sans 3 for readable encounter text
+as the approved baseline. Self-host font files with their original license notices:
 [Cinzel license](https://github.com/google/fonts/blob/main/ofl/cinzel/OFL.txt),
 [Source Sans license](https://github.com/adobe-fonts/source-sans/blob/release/LICENSE.md).
 No imitation of proprietary game font files is assumed.
@@ -169,13 +182,13 @@ Do not add nonfunctional game HUD, travel buttons, quest progress, or uncovered 
 **Review against brief:** A generic dashboard/card grid would lose the terrain-led character of
 both references. The proposal instead concentrates visual detail on the map and uses quieter
 reading surfaces. Persistent labels, stronger focus, readable warnings, and responsive details
-are intentional accessibility/usability adaptations that must be included in the human review.
+are approved baseline accessibility/usability adaptations to verify in the later milestone review.
 
 **Coverage gaps:** Neither reference establishes the companion's long encounter text, Hardcore
 warning presentation, keyboard focus, touch behavior, or narrow composition. Present those
-adaptations in the same reference proposal; record approval and exceptions in this section.
-Human approval remains pending. Visual implementation must wait under FR-015; functional data,
-camera, test, and accessible interaction work may proceed.
+adaptations within the approved direction and document significant deviations for milestone review.
+Baseline reference approval is complete under FR-015; visual implementation may proceed when
+its technical prerequisites are ready. The later overview/detail milestone approvals remain pending.
 
 **Alternatives considered:** Endgame Atlas images do not establish Act 1 campaign appearance.
 Historical annotated guides can inform appearance but cannot dictate current routes or facts.
@@ -209,5 +222,6 @@ data, telemetry, credentials, or third-party runtime calls in the first slice. R
 validate source-link protocols, and provide local error/retry feedback. Console diagnostics and
 Playwright traces suffice initially; no monitoring service or backend is introduced.
 
-All technical unknowns have decisions. Content review, reference approval, artwork preparation,
-and implementation verification remain explicit delivery dependencies, not claimed completions.
+All technical unknowns have decisions. Baseline reference approval was received on 2026-10-16.
+Content review, artwork preparation, implementation verification, and overview/detail milestone
+approval remain delivery dependencies, not claimed completions.

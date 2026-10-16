@@ -47,7 +47,8 @@ verified game content, or human visual approval.
   license, or original origin for each displayed artwork.
 - SC-005 provides explicit initial load and interaction targets with a stated baseline. These
   targets do not prescribe implementation choices.
-- Visual references are explicitly unavailable and unapproved. Reference approval, source
-  verification, and asset provenance remain delivery dependencies; checklist completion does not
-  satisfy them. Visual acceptance stays pending under FR-015–FR-017 and SC-007.
+- The user approved R1/R2 and the baseline visual direction on 2026-10-16, with panel layout
+  and information density adaptations allowed for readability and usability. Source verification,
+  asset provenance, and implemented visual milestone approvals remain delivery dependencies;
+  checklist completion does not satisfy them. Visual acceptance stays pending under FR-015–FR-017 and SC-007.
 - Items marked incomplete require spec updates before `$speckit-clarify` or `$speckit-plan`.

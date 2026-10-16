@@ -8,8 +8,8 @@ the script interface implementation must supply; they have not been run or claim
 
 - Node 24 LTS and npm; use the committed lockfile after setup.
 - The reviewed content list in [research.md](research.md#game-version-and-release-content-list).
-- Approved reference coverage before visual implementation under FR-015. Data validation and
-  functional interaction scaffolding can proceed independently.
+- R1/R2 and the baseline visual direction were approved on 2026-10-16 under FR-015; see
+  research.md. Panel layout and information density may adapt for readability and usability.
 - Published content must have its real review date, evidence, and asset provenance; see
   [data-model.md](data-model.md) and [content contract](contracts/campaign-content.md).
 
@@ -107,9 +107,10 @@ acceptance measurements, not a new telemetry service.
 
 ## Visual acceptance
 
-First review the concrete [R1/R2 proposal](research.md#4-visual-reference-proposal--awaiting-human-approval)
-and its coverage gaps. Record the user's actual approval or requested replacement before
-visual implementation. Approval of reference appearance does not authorize copying its assets.
+Use the concrete [R1/R2 baseline](research.md#4-visual-reference-proposal--approved-baseline)
+approved by the user on 2026-10-16, including its documented coverage gaps and adaptations.
+Panel layout and information density may adapt for readability and usability. Reference approval
+is recorded in research.md and does not authorize copying its assets or approve implemented milestones.
 
 After implementation, capture overview, selected details, encounter warning, keyboard focus,
 and narrow-screen images. Pin the capture environment and wait for the relevant fonts/assets.
