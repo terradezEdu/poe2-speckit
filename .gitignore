@@ -7,6 +7,10 @@ __pycache__/
 # Node
 node_modules/
 dist/
+build/
+coverage/
+*.log
+*.tsbuildinfo
 
 # Secrets
 .env
@@ -16,4 +20,12 @@ dist/
 # Playwright
 .playwright-cli/
 playwright-report/
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+content/candidates/*.proposed.json
 test-results/
+playwright-report/

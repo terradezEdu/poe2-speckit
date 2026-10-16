@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "malura-campaign-guide",
+  "reviewStatus": "requires-content-review",
+  "publicationReady": false,
+  "targetGameVersion": "0.5.5e",
+  "researchBaselineDate": "2026-10-16",
+  "versionCompatibility": "unverified",
+  "upstream": {
+    "repository": "maluramichael/poe2overlay",
+    "commit": "07b241f30f0c0b3b47959030e08c314731f3cc2e",
+    "path": "ui/guide.json",
+    "gitBlobSha": "001db59f130deb694020dbfcace7b970b95c2df8",
+    "sha256": "f62b30241797911fe7005424220dcfae426f8881ae6b4e157c1ce2f376a6da24",
+    "gameVersion": "0.5.5",
+    "patch": "0.5.5 (Forbidden Rites)",
+    "updated": "2026-09-30",
+    "source": "https://poe2speedrun.malura.de/"
+  },
+  "attribution": {
+    "publisher": "Michael Malura",
+    "license": "MIT",
+    "licensePath": "LICENSE",
+    "licenseSha256": "5b6097b9ab73e14c9fb07d22d334a88af65459c2449c183b67828055b5b6e7a7",
+    "licenseText": "MIT License\n\nCopyright (c) 2026 Michael Malura\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "modificationNote": "English opening-segment text only; bold markup removed, unsupported survival guarantee excluded. No assets, code, game dialogue, or later campaign steps imported."
+  },
+  "coverage": {
+    "includedLocationIds": [
+      "act1-riverbank",
+      "act1-clearfell-encampment",
+      "act1-clearfell",
+      "act1-mud-burrow",
+      "act1-grelwood"
+    ],
+    "missingStandaloneLocations": [
+      "act1-mud-burrow"
+    ]
+  },
+  "steps": [
+    {
+      "locationId": "act1-riverbank",
+      "pointer": "/steps/0",
+      "text": "Kill The Bloated Miller",
+      "hint": "Fight him in the corner opposite the entrance: afterwards walk straight past the blockade into town.",
+      "notes": [],
+      "tags": [
+        "must",
+        "boss"
+      ]
+    },
+    {
+      "locationId": "act1-clearfell-encampment",
+      "pointer": "/steps/1",
+      "text": "Talk to Renly -> first Uncut Skill Gem",
+      "hint": "Cut your skill, then head straight out to Clearfell.",
+      "notes": [],
+      "tags": [
+        "must",
+        "town",
+        "gem"
+      ]
+    },
+    {
+      "locationId": "act1-clearfell",
+      "pointer": "/steps/2",
+      "text": "Kill Beira of the Rotten Pack -> +10% cold resistance",
+      "hint": "Beira is in the middle of the zone. Pick up and use the Head of the Winter Wolf.",
+      "notes": [
+        {
+          "pointer": "/steps/2/notes/0",
+          "text": "Minimal: Just run to the exit to The Grelwood, Beira is optional."
+        },
+        {
+          "pointer": "/steps/2/notes/1",
+          "text": "Mysterious Campsite (checkpoint): guaranteed Uncut Skill Gem, e.g. for Frost Bomb (Exposure)."
+        },
+        {
+          "pointer": "/steps/2/notes/2",
+          "text": "Skip the Mud Burrow: it only gives a Support Gem + gold from Renly."
+        }
+      ],
+      "tags": [
+        "must",
+        "buff",
+        "boss"
+      ]
+    },
+    {
+      "locationId": "act1-grelwood",
+      "pointer": "/steps/3",
+      "text": "Grab the Waypoint at the Tree of Souls, then into The Red Vale",
+      "hint": "Follow the glowing roots to the Tree of Souls, then go upriver to the Red Vale.",
+      "notes": [
+        {
+          "pointer": "/steps/3/notes/0",
+          "text": "The 4 POIs form a diamond: Witch Hut, Grim Tangle entrance, Tree of Souls, Brambleghast. Once you know two, you know where the others are."
+        },
+        {
+          "pointer": "/steps/3/notes/1",
+          "text": "Follow the mushrooms to the Grim Tangle entrance, step in briefly and activate its Waypoint."
+        },
+        {
+          "pointer": "/steps/3/notes/2",
+          "text": "Witch Hut (optional): the cauldron gives a Medium Life + Mana Flask, even without the kill. Areagne, Forgotten Witch drops a Support Gem: Respawn at Checkpoint first so no monsters are nearby."
+        },
+        {
+          "pointer": "/steps/3/notes/3",
+          "text": "Skip Gerung, the Brambleghast: it only gives a level 2 Skill Gem."
+        }
+      ],
+      "tags": [
+        "must"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "pointer": "/steps/0/notes/0",
+      "reason": "Numerical survival guarantee without sufficient character, attack, or variant evidence; do not import the threshold or imply safety."
+    }
+  ],
+  "openIssues": [
+    "Source declares 0.5.5, not the 0.5.5e research target. Retrieval date is not patch verification.",
+    "Step sequence and notes do not establish all four direct area relationships or return-travel restrictions.",
+    "Mud Burrow has no standalone opening step; confirm acquisition and hand-in conditions without inferring them from a skip recommendation.",
+    "No independently verified Hardcore threat, trigger, damage, defenses, or safe threshold is supplied by this import.",
+    "Source must/skip tags are routing labels, not verified progression roles. Onward Grelwood instructions must become informational coverage boundaries, not additional actionable destinations."
+  ]
+}

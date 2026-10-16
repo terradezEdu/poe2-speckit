@@ -117,8 +117,9 @@ and behavior before publishing a Hardcore warning. Explain the documented threat
 preparation advice as editorial and cite its supporting mechanic. Do not invent lethality
 thresholds, guaranteed avoidance, timings, or current resistance values.
 
-**Remaining content work:** Reconcile target-version applicability, entry/return restrictions,
-quest conditions, encounter variants, source conflicts, and at least one supported warning.
+**Content review:** T013's scoped supplemental review below now provides the minimum sourced
+graph, Mud Burrow reward/hand-in, and supported warning. Target-version applicability,
+entry/return restrictions, and conflicting numerical fields retain individual uncertainty.
 PoE2DB is a community-maintained source, not an official guarantee; its default monster views can
 show other levels or variants. Prefer relevant official changes and versioned first-hand evidence
 when available. Retain uncertainty on individual claims when applicability cannot be established.
@@ -127,6 +128,185 @@ Publication must satisfy the minimum sourced content; uncertainty cannot replace
 Write original summaries and cite evidence. Source availability is not permission to copy its
 prose, image assets, or bulk dataset. Preserve applicable attribution/permission records for any
 material actually reused. No source image is proposed as a distributable application asset.
+
+### Source acquisition and reuse gate
+
+**Investigation and implementation: 2026-10-16; version and provenance review: 2026-10-16.**
+The user's request authorized evaluation of the existing route before T013 continued. The pinned
+GitHub snapshot is a viable source for its limited English editorial text: the importer reads
+only the immutable repository commit through GitHub's documented Contents API, verifies the
+root MIT license before fetching the guide, and retains its notice. The upstream README describes
+the separate `poe2speedrun.malura.de/overlay/guide.json` service as the overlay's live update
+endpoint and identifies that service as the guide's origin. The importer does not request that
+endpoint. No separate service terms or data license were established, so this conclusion applies
+to the MIT-licensed pinned repository snapshot only, not to future direct/live-service extraction.
+The imported subset is occasional and small; it does not mirror or repeatedly harvest the live
+service. MIT covers the snapshot's licensed material, not GGG assets or any third-party material
+whose rights the repository author may not hold.
+
+The source version is still recorded as `0.5.5`; the release target remains `0.5.5e`. Review of
+the 0.5.5b, 0.5.5c, 0.5.5d, and 0.5.5e notes found no listed change to Riverbank, Clearfell
+Encampment, Clearfell, Mud Burrow, Grelwood, their opening route, or the imported permanent reward
+claims. The 0.5.5 base update did add Ritual encounters to campaign areas and boss Rituals, so
+the snapshot does not cover that new encounter layer and cannot substantiate a current Hardcore
+threat. Patch notes establish no listed conflict for the imported opening route/reward text; they
+do not prove every claim or all hotfix compatibility. Keep the candidate's `versionCompatibility`
+as `unverified` and retain per-claim uncertainty. Do not treat this focused comparison as a
+complete version certification.
+
+The candidate itself still does not establish the complete four-edge graph, Mud Burrow reward
+conditions, or a sourced Hardcore threat. The subsequent single-publisher supplemental review
+below resolves the minimum authored-content coverage without promoting the candidate itself.
+`content/act1-opening.json` now has an actual review date; assembled delivery remains pending.
+
+The initial acquisition hold should not be interpreted as a ban on all APIs. GGG's
+[developer policy](https://www.pathofexile.com/developer/docs) supports documented APIs and
+named exports, subject to its conditions; undocumented endpoints and game-file tools are
+excluded. Its [API reference](https://www.pathofexile.com/developer/docs/reference) exposes
+account, league, character, stash and economy resources, with limited PoE2 coverage, but no
+campaign-area/quest/boss database endpoint. Its [data exports](https://www.pathofexile.com/developer/docs/data)
+list only the passive skill tree for PoE2. OAuth registration would not supply this feature's
+missing data. The [website robots file](https://www.pathofexile.com/robots.txt) excludes website
+`/api/` crawling; that is distinct from authorized documented API usage.
+
+#### Alternatives evaluated
+
+| Candidate | Permission and acquisition evidence | Coverage, version, reliability, and decision |
+|---|---|---|
+| GGG supported APIs / exports | Official policies and resources linked above permit supported API access under their requirements. | Strongest authority and publisher longevity, but no campaign dataset or monster/quest export. No unofficial endpoints used. |
+| Michael Malura's `poe2overlay` guide JSON | [Pinned MIT license](https://github.com/maluramichael/poe2overlay/blob/07b241f30f0c0b3b47959030e08c314731f3cc2e/LICENSE), [README](https://github.com/maluramichael/poe2overlay/blob/07b241f30f0c0b3b47959030e08c314731f3cc2e/README.md), and [structured file](https://github.com/maluramichael/poe2overlay/blob/07b241f30f0c0b3b47959030e08c314731f3cc2e/ui/guide.json). The root MIT license is included and checked before guide retrieval; no nested `ui` license or data exclusion was present. Acquired only from the immutable GitHub commit through the documented Contents API. | Suitable for occasional use of its pinned editorial snapshot, with attribution and notice retained. It is not permission to harvest the separate live service or any GGG/game asset. The pinned snapshot's source metadata declares `0.5.5 (Forbidden Rites)`, updated 2026-09-30; the commit is dated 2026-10-09. The focused 0.5.5b–e patch-note comparison found no listed change to imported opening route/reward claims, but the broader 0.5.5 campaign Ritual additions are outside the guide and prevent using it as evidence for those encounters or a Hardcore threat. Keep exact compatibility unverified. |
+| Malura's original speedrun site repository | [Apache-2.0 license](https://github.com/maluramichael/poe2campaignspeedrun.malura.de/blob/19789377f908c914fbd356531f1193738aebc6eb/LICENSE) and [NOTICE](https://github.com/maluramichael/poe2campaignspeedrun.malura.de/blob/19789377f908c914fbd356531f1193738aebc6eb/NOTICE) identify the same author. | Provenance context. Last observed update 2026-08-14; the overlay JSON is newer and separately distributed under MIT. No website scraping or original-site assets imported. |
+| RePoE / `repoe-fork/poe2` | [RePoE license](https://github.com/repoe-fork/repoe/blob/master/LICENSE.md) gives MIT for tooling but expressly reserves generated `data` contents to GGG under GGG terms; PoE2 data repository reports no license. | Rich structured tables, PoE2 repository pushed 2026-10-14. Tooling rights do not grant redistribution rights to game data. Reject automatic table import without additional permission. |
+| PoE2DB | [robots.txt](https://poe2db.tw/robots.txt) does not exclude the consulted ordinary area/quest/monster pages. The [disclaimer](https://poe2db.tw/us/General_disclaimer) identifies wiki text as CC BY-NC-SA 3.0 and reserves GGG-derived material; neither is treated as a blanket data-export license. | Selected as the sole supplemental publisher after the user's instruction. Consult only opening area connections, the Mud Burrow quest, and Beira's campaign skill categories; write original factual summaries. No wiki prose, dialogue, scripts, raw tables or assets copied; no ongoing or bulk import. Exact version archives remain unavailable. |
+| PoE2 Wiki / Cargo API | Policy/robots could not be verified; privacy-policy request returned HTTP 403. Its [file-license picker](https://www.poe2wiki.net/wiki/MediaWiki:Licenses) does not grant rights over all article or Cargo data. | Promising relational queries and revisions, but selected-data rights and access policy remain unverified. No content API requests or access-control bypass attempted. |
+| `path2maps/poe2maps.github.io` | [MIT license](https://github.com/path2maps/poe2maps.github.io/blob/main/LICENSE); `guide.json` root metadata inspected through the Contents API. | Last push 2026-01-10, two commits observed, no patch/update metadata. Useful fallback format, weaker freshness and sustainability evidence; not selected. |
+| `juddisjudd/exilecompass` | [AGPL-3.0 license](https://github.com/juddisjudd/exilecompass/blob/main/LICENSE), [campaign documentation](https://github.com/juddisjudd/exilecompass/blob/main/src/lib/data/campaign/README.md). | Active (push 2026-10-15), structured objectives. Adaptation needs a separate licensing/provenance audit, including game-log material and AGPL obligations. No campaign dataset imported or application license changed. |
+| `svhlDev/poe2-data` and mixed-source guides | [`poe2-data`](https://github.com/svhlDev/poe2-data) reports no license and describes PoE2DB-derived records. [Domistae's guide](https://github.com/domistae/poe2-leveling) declares mixed external references and incomplete patch reconciliation. | Public hosting, an MCP wrapper, or an open-source scraper does not establish upstream rights. These alternatives do not improve the selected source's permission/freshness combination. |
+
+#### Selected access and reuse evidence
+
+GitHub's [API terms, section H](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#h-api-terms)
+govern API data access and request limits. Its [robots.txt](https://github.com/robots.txt)
+points to the API and restricts several HTML crawling paths. `https://api.github.com/robots.txt`
+returned HTTP 404 during review. We use the deliberately documented
+[public Contents endpoint](https://docs.github.com/en/rest/repos/contents#get-repository-content),
+which permits unauthenticated public-file reads and commit refs. This is not a fallback around
+a denied source endpoint. Two files are requested: LICENSE first, then guide JSON.
+
+The source lock records the full immutable commit and both file hashes:
+
+| Evidence | Pinned value |
+|---|---|
+| Repository / commit | `maluramichael/poe2overlay` / `07b241f30f0c0b3b47959030e08c314731f3cc2e` |
+| LICENSE Git blob | `7b5614a2741886876a4bf01b875560ca2ff57667` |
+| LICENSE SHA-256 | `5b6097b9ab73e14c9fb07d22d334a88af65459c2449c183b67828055b5b6e7a7` |
+| Guide Git blob | `001db59f130deb694020dbfcace7b970b95c2df8` |
+| Guide SHA-256 | `f62b30241797911fe7005424220dcfae426f8881ae6b4e157c1ce2f376a6da24` |
+
+The candidate embeds the complete MIT notice. Only original English editorial text through
+the first Grelwood step is retained; images, icons, fonts, dialogue, game-file tables, source
+code, and later campaign steps are excluded. Source field locators remain attached. The
+guide's numerical survival guarantee is expressly excluded; it is not adopted as a Hardcore
+safety threshold. The license establishes a route for this text, not the truth of every claim
+or permission for GGG artwork.
+
+#### Reliability, versioning, and update decision
+
+`npm run content:acquire` is an explicit maintenance operation, separate from builds/runtime.
+It verifies the pinned license before requesting text, checks Git blob and SHA-256 integrity,
+checks patch/update metadata, and atomically replaces only the review candidate. Denied,
+redirected, rate-limited, oversized, or invalid responses stop the operation without retries
+or alternate sources. Normal import checks the candidate hash; `--propose` stages an update
+separately without replacing the pinned candidate.
+
+[GitHub's rate-limit documentation](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api)
+allows 60 unauthenticated requests per hour; two per reviewed update fit this slice. The updater
+uses documented API version `2026-03-10` and an identifiable User-Agent. No polling service,
+OAuth dependency, HTML parser, backend, or runtime third-party request is introduced. Local
+pins preserve availability if the source disappears. Upstream review and occasional adapter
+maintenance remain necessary.
+
+The candidate has `publicationReady: false`, `versionCompatibility: unverified`, and no
+`reviewedAt`. Source version 0.5.5 is preserved separately from target 0.5.5e. The focused
+intervening-patch review found no listed change to its imported route/reward claims, while the
+base patch's campaign Ritual changes remain outside the candidate. There are four
+standalone opening records; Mud Burrow appears only in a Clearfell note. Sequence adjacency
+does not prove every direct route or return-travel restriction, so the importer generates no
+graph edges. Damage, resistances, weaknesses, triggers, and safe thresholds are not inferred.
+Routing tags such as must/skip do not establish progression roles; onward Grelwood instructions
+must be adapted to informational boundary notices before any release use.
+No release minima or target version were changed to make this candidate publishable.
+
+**Outcome:** The pinned GitHub snapshot import is supported for the limited MIT-licensed text it
+contains; do not generalize that permission to the live service endpoint. The patch-note review
+supports using the imported opening route/reward claims as candidate evidence for the 0.5.5e
+review, with individual uncertainty retained, but does not certify all claims. The supplemental
+review below completes T013's minimum authored content. The target, acceptance criteria, and
+unpublished status of the acquisition candidate remain as established.
+
+**Further verification option:** Supplement the reviewed content with original, versioned first-hand
+observations for the five-location graph, Mud Burrow conditions, and a supported danger.
+Record patch/variant, date, original notes, source locator, and explicit reuse grant. Existing
+SourceEvidence/EvidenceValue fields support normal review and release. GGG's policy permits
+informed reading of game logs, but a log cannot establish combat damage or quest semantics.
+No log reader, live integration, private player-data collection, or gameplay automation is added.
+
+**Alternative for broader automation:** Obtain written permission from GGG or a publisher that
+covers the underlying material, automated API/export acquisition, redistribution, intended
+commercial/noncommercial use, attribution, limits, update cadence, and version archives. No
+request was sent. Changing the target, widening coverage, or shipping an incomplete warning
+is not a substitute for the existing requirements.
+
+### T013: one scoped supplemental publisher and authored outcome
+
+**Actual review completed: 2026-10-16.** The user authorized one narrow supplemental source.
+PoE2DB is that one publisher; the consulted pages are the five included area records, the
+opening sections of Act 1, Treacherous Ground, and the Beira campaign monster record already
+identified above. No additional campaign publisher or live guide service was introduced.
+
+**Proportional reuse decision:** This is an occasional, small factual consultation, with
+original summaries and citations. Do not reuse the community article's expressive prose,
+game dialogue, assets, scripts, or table collections. The wiki license does not establish rights
+over GGG material; robots access permission does not establish redistribution rights.
+The [EU Database Directive, Articles 7–8](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A31996L0009)
+distinguishes substantial extraction from lawful use of insubstantial portions, while retaining
+restrictions on repeated/systematic extraction and third-party content rights. This small set of
+opening facts neither reproduces the site's collection nor substitutes for its service. No
+qualitatively substantial selection or repeated accumulation of the database is intended. This
+supports the limited factual use here; it is not permission for a database mirror or export.
+MIT attribution/notice remains in the authored guide SourceEvidence records. No project-wide
+license change or noncommercial restriction is inferred from factual citation.
+
+| Review item | Evidence and authored decision |
+|---|---|
+| Five locations and four connections | The included area's `Attr / Connected` fields establish Riverbank–Encampment, Encampment–Clearfell, Clearfell–Mud Burrow, and Clearfell–Grelwood. Roles use town metadata and the opening quest/route evidence, rather than interpreting guide routing tags as proof. Return direction and complete access conditions remain unknown. |
+| Optional Mud Burrow reward | Act 1's quest list labels Treacherous Ground optional. The quest stages establish the Devourer kill and Renly hand-in in Clearfell Encampment. The guide and quest list support an Uncut Support Gem plus gold; no combined quantity or verified gold amount is selected. |
+| Reward notation | The community opening notes say Level 1; the Treacherous Ground table uses iLv4. These may refer to different concepts. The authored level is null/conflicted with both locators; no automatic conversion is made. |
+| Beira variant and defenses | Use the record with metadata `UrchinHagBossCampaignSTANDALONE`, separate from generic `UrchinHagBoss` and spectre/reservation views. Their fire/cold values differ from the Clearfell table. Exact resistance percentages and independently applicable weaknesses are unresolved. |
+| Hardcore threat | In the campaign record, `HagBossDetonateDead` identifies cold area damage. The warning's trigger is being hit within that damaging area; it does not claim an activation telegraph or literal on-screen corpse cue. The consequence is cold damage and, if fatal, the end of a Hardcore run, supported separately by the official Hardcore rules. Preparation advice is explicitly editorial and uncertain. No damage amount, timing, freezing, lethal threshold, or survival guarantee is asserted. |
+| Other mechanics | The Beira record also identifies cold projectile and physical spike damage categories. Other boss properties are explicit unknowns; empty content categories are scoped omissions, not verified absence. No skill code or numeric base table is retained. |
+| Endpoint and boundaries | Grelwood stays the endpoint. Red Vale, Grim Tangle and Lost Catacombs are informational notices from its connection list, with no playable/selectable extra locations. The guide's entrance visit and the quest list's blocked onward path do not establish identical access points; that condition remains uncertain. |
+| Version review | Keep the target 0.5.5e and baseline 2026-10-16. The source guide remains 0.5.5; PoE2DB has no reviewed exact-version archive. Individual `verifiedForVersion` fields remain null. Official 0.5.5b–e notes provide supporting review context, not blanket certification. The 0.5.5 Forbidden Rites Ritual layer is not silently mapped to these base campaign mechanics. |
+
+**Authored result:** `content/act1-opening.json` contains five real locations, the four sourced
+connections, three campaign encounters, three reward records, one Grelwood point of interest,
+and one sourced Hardcore warning. Its `reviewedAt` is 2026-10-16, assigned after this review;
+unknowns and conflicts retain their notes and source locators. All summaries are original.
+The raw import candidate and source lock are unchanged.
+
+The intervening staff lists reviewed were [0.5.5b](https://www.pathofexile.com/forum/view-thread/4004106),
+[0.5.5c](https://www.pathofexile.com/forum/view-thread/4006357),
+[0.5.5d](https://www.pathofexile.com/forum/view-thread/4008534) and
+[0.5.5e](https://www.pathofexile.com/forum/view-thread/4009785).
+[0.5.5's league rules](https://www.pathofexile.com/forum/view-thread/4000864) support the
+Hardcore-death consequence and identify the separate Forbidden Rites encounter layer.
+
+**Validation:** The authored-part schema and existing publication validator passed on the real
+content with a temporary in-memory layout and empty asset list. This checks graph, references,
+evidence and release minima without creating T014 layout files or a public snapshot. There are
+zero claims marked independently verified for 0.5.5e, three conflicted fields, and explicit
+unknown fields. T013 is complete; T014–T016 and delivery publication remain pending. The
+reproducible one-off validation command is recorded in quickstart.md.
 
 ## 4. Visual reference proposal — approved baseline
 

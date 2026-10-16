@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "malura-campaign-guide",
+  "repository": "maluramichael/poe2overlay",
+  "commit": "07b241f30f0c0b3b47959030e08c314731f3cc2e",
+  "apiVersion": "2026-03-10",
+  "permissionReview": {
+    "checkedAt": "2026-10-16",
+    "license": "MIT",
+    "scope": "Original editorial guide text distributed in ui/guide.json under the repository MIT license; excludes game assets, dialogue, and extracted game tables.",
+    "termsUrl": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#h-api-terms",
+    "robotsUrl": "https://github.com/robots.txt",
+    "apiRobotsUrl": "https://api.github.com/robots.txt",
+    "apiRobotsHttpStatus": 404,
+    "accessBasis": "Documented public GitHub Contents API, not GitHub HTML crawling or the guide website. Root LICENSE and ui directory were checked; no nested license or exclusion was present."
+  },
+  "licenseFile": {
+    "path": "LICENSE",
+    "gitBlobSha": "7b5614a2741886876a4bf01b875560ca2ff57667",
+    "sha256": "5b6097b9ab73e14c9fb07d22d334a88af65459c2449c183b67828055b5b6e7a7"
+  },
+  "guideFile": {
+    "path": "ui/guide.json",
+    "gitBlobSha": "001db59f130deb694020dbfcace7b970b95c2df8",
+    "sha256": "f62b30241797911fe7005424220dcfae426f8881ae6b4e157c1ce2f376a6da24"
+  },
+  "expectedSource": {
+    "gameVersion": "0.5.5",
+    "patchLabel": "0.5.5 (Forbidden Rites)",
+    "updatedAt": "2026-09-30"
+  },
+  "targetGameVersion": "0.5.5e",
+  "researchBaselineDate": "2026-10-16",
+  "exclusions": [
+    {
+      "pointer": "/steps/0/notes/0",
+      "reason": "Numerical survival guarantee without sufficient character, attack, or variant evidence; do not import the threshold or imply safety."
+    }
+  ],
+  "candidateSha256": "19fb24e34e87b92f44add03868fa544bf4cf74211de9afe2a6fb12b30b2e93fc"
+}

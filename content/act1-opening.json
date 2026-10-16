@@ -1,0 +1,1656 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "act1-opening-2026-10-16-v1",
+  "targetGameVersion": "0.5.5e",
+  "researchBaselineDate": "2026-10-16",
+  "reviewedAt": "2026-10-16",
+  "segment": {
+    "id": "act1-opening",
+    "actId": "act1",
+    "title": "Act 1: Riverbank to Grelwood",
+    "entryLocationId": "act1-riverbank",
+    "endpointLocationId": "act1-grelwood",
+    "locationIds": [
+      "act1-riverbank",
+      "act1-clearfell-encampment",
+      "act1-clearfell",
+      "act1-mud-burrow",
+      "act1-grelwood"
+    ],
+    "coverageRationale": {
+      "value": "Five connected opening locations cover the route to Grelwood and the optional Mud Burrow quest. Coverage is deliberately limited; empty categories do not assert that an area has no other content.",
+      "status": "documented",
+      "kind": "editorial-advice",
+      "sourceIds": [
+        "db-act1-quests",
+        "guide-grelwood"
+      ],
+      "verifiedForVersion": null,
+      "checkedAt": "2026-10-16",
+      "note": "Original coverage decision for this five-location map, informed by the cited campaign sources."
+    },
+    "identitySourceIds": [
+      "db-act1-quests"
+    ],
+    "boundaries": [
+      {
+        "fromLocationId": "act1-grelwood",
+        "externalDestinationName": "The Red Vale",
+        "relationship": {
+          "value": "Connected beyond this map. This is a coverage notice, not an available destination.",
+          "status": "documented",
+          "kind": "fact",
+          "sourceIds": [
+            "db-grelwood",
+            "guide-grelwood"
+          ],
+          "verifiedForVersion": null,
+          "checkedAt": "2026-10-16",
+          "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+        },
+        "accessConditions": {
+          "value": null,
+          "status": "unknown",
+          "kind": "fact",
+          "sourceIds": [
+            "db-grelwood"
+          ],
+          "verifiedForVersion": null,
+          "checkedAt": "2026-10-16",
+          "note": "Onward route conditions have not been reviewed for this map."
+        }
+      },
+      {
+        "fromLocationId": "act1-grelwood",
+        "externalDestinationName": "The Grim Tangle",
+        "relationship": {
+          "value": "Connected beyond this map. This is a coverage notice, not an available destination.",
+          "status": "documented",
+          "kind": "fact",
+          "sourceIds": [
+            "db-grelwood",
+            "guide-grelwood"
+          ],
+          "verifiedForVersion": null,
+          "checkedAt": "2026-10-16",
+          "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+        },
+        "accessConditions": {
+          "value": "Quest progression can restrict the onward path.",
+          "status": "uncertain",
+          "kind": "fact",
+          "sourceIds": [
+            "guide-grelwood",
+            "db-act1-quests"
+          ],
+          "verifiedForVersion": null,
+          "checkedAt": "2026-10-16",
+          "note": "The guide describes visiting the entrance; the quest list describes roots blocking the path forward. The exact blocked point and unlock conditions are unresolved."
+        }
+      },
+      {
+        "fromLocationId": "act1-grelwood",
+        "externalDestinationName": "Lost Catacombs",
+        "relationship": {
+          "value": "Listed as an external connection. This area is outside the reviewed map.",
+          "status": "documented",
+          "kind": "fact",
+          "sourceIds": [
+            "db-grelwood"
+          ],
+          "verifiedForVersion": null,
+          "checkedAt": "2026-10-16",
+          "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+        },
+        "accessConditions": {
+          "value": null,
+          "status": "unknown",
+          "kind": "fact",
+          "sourceIds": [
+            "db-grelwood"
+          ],
+          "verifiedForVersion": null,
+          "checkedAt": "2026-10-16",
+          "note": "No opening-campaign access or quest conditions have been reviewed."
+        }
+      }
+    ]
+  },
+  "locations": [
+    {
+      "id": "act1-riverbank",
+      "name": "The Riverbank",
+      "identitySourceIds": [
+        "guide-riverbank",
+        "db-riverbank"
+      ],
+      "summary": {
+        "value": "The opening route reaches Clearfell Encampment from the Riverbank, where the Bloated Miller is a campaign boss.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-riverbank",
+          "db-riverbank"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "progressionRole": {
+        "value": "main-route",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-act1-notes",
+          "guide-riverbank"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "encounterIds": [
+        "the-bloated-miller"
+      ],
+      "rewardIds": [],
+      "pointOfInterestIds": [],
+      "warningIds": []
+    },
+    {
+      "id": "act1-clearfell-encampment",
+      "name": "Clearfell Encampment",
+      "identitySourceIds": [
+        "guide-encampment",
+        "db-encampment"
+      ],
+      "summary": {
+        "value": "A town connected to the Riverbank and Clearfell. Renly gives the Treacherous Ground reward here after the Devourer is defeated.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-encampment",
+          "db-treacherous-ground"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "progressionRole": {
+        "value": "town",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "encounterIds": [],
+      "rewardIds": [
+        "renly-opening-skill-gem",
+        "treacherous-ground-reward"
+      ],
+      "pointOfInterestIds": [],
+      "warningIds": []
+    },
+    {
+      "id": "act1-clearfell",
+      "name": "Clearfell",
+      "identitySourceIds": [
+        "guide-clearfell",
+        "db-clearfell"
+      ],
+      "summary": {
+        "value": "Clearfell links the town, optional Mud Burrow branch and Grelwood. Beira is associated with a permanent cold-resistance reward.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell",
+          "guide-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "progressionRole": {
+        "value": "main-route",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-act1-quests",
+          "guide-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "encounterIds": [
+        "beira-of-the-rotten-pack"
+      ],
+      "rewardIds": [
+        "head-of-the-winter-wolf"
+      ],
+      "pointOfInterestIds": [],
+      "warningIds": [
+        "beira-cold-area-damage"
+      ]
+    },
+    {
+      "id": "act1-mud-burrow",
+      "name": "Mud Burrow",
+      "identitySourceIds": [
+        "db-mud-burrow",
+        "db-treacherous-ground"
+      ],
+      "summary": {
+        "value": "An optional branch from Clearfell containing the Devourer. Its quest reward is collected from Renly in Clearfell Encampment.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-mud-burrow",
+          "db-treacherous-ground",
+          "db-act1-quests"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "progressionRole": {
+        "value": "optional",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-act1-quests"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "encounterIds": [
+        "the-devourer"
+      ],
+      "rewardIds": [
+        "treacherous-ground-reward"
+      ],
+      "pointOfInterestIds": [],
+      "warningIds": []
+    },
+    {
+      "id": "act1-grelwood",
+      "name": "The Grelwood",
+      "identitySourceIds": [
+        "guide-grelwood",
+        "db-grelwood"
+      ],
+      "summary": {
+        "value": "The Grelwood contains the Tree of Souls and connects to further campaign areas. This map ends here; onward areas appear only as coverage notices.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-grelwood",
+          "db-grelwood"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The area and connections are sourced; ending this map here is an original coverage decision."
+      },
+      "progressionRole": {
+        "value": "main-route",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-act1-quests",
+          "guide-grelwood"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "encounterIds": [],
+      "rewardIds": [],
+      "pointOfInterestIds": [
+        "tree-of-souls"
+      ],
+      "warningIds": []
+    }
+  ],
+  "connections": [
+    {
+      "id": "riverbank-encampment",
+      "fromLocationId": "act1-riverbank",
+      "toLocationId": "act1-clearfell-encampment",
+      "relationship": {
+        "value": "The two campaign areas are connected.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-riverbank",
+          "db-encampment",
+          "guide-riverbank"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "traversalDirection": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-riverbank",
+          "db-encampment",
+          "guide-riverbank"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The area connection listings establish adjacency, not unrestricted travel in both directions. Entry and return behavior were not independently observed."
+      },
+      "accessConditions": {
+        "value": "The guide describes entering town after defeating the Bloated Miller.",
+        "status": "uncertain",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-riverbank"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The route guide places the Miller fight before entering town; it does not establish all entry gates or whether return travel is available."
+      }
+    },
+    {
+      "id": "encampment-clearfell",
+      "fromLocationId": "act1-clearfell-encampment",
+      "toLocationId": "act1-clearfell",
+      "relationship": {
+        "value": "The two campaign areas are connected.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-encampment",
+          "db-clearfell",
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "traversalDirection": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-encampment",
+          "db-clearfell",
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The area connection listings establish adjacency, not unrestricted travel in both directions. Entry and return behavior were not independently observed."
+      },
+      "accessConditions": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-encampment",
+          "db-clearfell",
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "No complete quest, portal, waypoint or return-travel conditions were established for this connection."
+      }
+    },
+    {
+      "id": "clearfell-mud-burrow",
+      "fromLocationId": "act1-clearfell",
+      "toLocationId": "act1-mud-burrow",
+      "relationship": {
+        "value": "The two campaign areas are connected.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell",
+          "db-mud-burrow",
+          "db-treacherous-ground"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "traversalDirection": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell",
+          "db-mud-burrow",
+          "db-treacherous-ground"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The area connection listings establish adjacency, not unrestricted travel in both directions. Entry and return behavior were not independently observed."
+      },
+      "accessConditions": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell",
+          "db-mud-burrow",
+          "db-treacherous-ground"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "No complete quest, portal, waypoint or return-travel conditions were established for this connection."
+      }
+    },
+    {
+      "id": "clearfell-grelwood",
+      "fromLocationId": "act1-clearfell",
+      "toLocationId": "act1-grelwood",
+      "relationship": {
+        "value": "The two campaign areas are connected.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell",
+          "db-grelwood",
+          "guide-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "traversalDirection": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell",
+          "db-grelwood",
+          "guide-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The area connection listings establish adjacency, not unrestricted travel in both directions. Entry and return behavior were not independently observed."
+      },
+      "accessConditions": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell",
+          "db-grelwood",
+          "guide-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "No complete quest, portal, waypoint or return-travel conditions were established for this connection."
+      }
+    }
+  ],
+  "encounters": [
+    {
+      "id": "the-bloated-miller",
+      "name": "The Bloated Miller",
+      "identitySourceIds": [
+        "guide-riverbank",
+        "db-riverbank"
+      ],
+      "isCampaignBoss": {
+        "value": true,
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-riverbank"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "locationId": "act1-riverbank",
+      "damageTypes": [
+        {
+          "type": "physical",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The physical damage category has not been established for the Bloated Miller."
+          }
+        },
+        {
+          "type": "fire",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The fire damage category has not been established for the Bloated Miller."
+          }
+        },
+        {
+          "type": "cold",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The cold damage category has not been established for the Bloated Miller."
+          }
+        },
+        {
+          "type": "lightning",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The lightning damage category has not been established for the Bloated Miller."
+          }
+        },
+        {
+          "type": "chaos",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The chaos damage category has not been established for the Bloated Miller."
+          }
+        }
+      ],
+      "resistances": [
+        {
+          "damageType": "physical",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable physical resistance percentage was established for the Bloated Miller; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "fire",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable fire resistance percentage was established for the Bloated Miller; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "cold",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable cold resistance percentage was established for the Bloated Miller; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "lightning",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable lightning resistance percentage was established for the Bloated Miller; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "chaos",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable chaos resistance percentage was established for the Bloated Miller; an omitted value does not mean zero."
+          }
+        }
+      ],
+      "weaknesses": [
+        {
+          "id": "miller-weakness-unreviewed",
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No independently sourced weakness has been reviewed."
+          }
+        }
+      ],
+      "mechanics": [
+        {
+          "id": "miller-mechanics-unreviewed",
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Detailed campaign mechanics have not been reviewed for this encounter."
+          },
+          "trigger": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Activation conditions and telegraphs have not been reviewed."
+          },
+          "response": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No encounter-specific response has been established."
+          }
+        }
+      ],
+      "warningIds": []
+    },
+    {
+      "id": "beira-of-the-rotten-pack",
+      "name": "Beira of the Rotten Pack",
+      "identitySourceIds": [
+        "guide-clearfell",
+        "db-clearfell",
+        "db-beira-campaign"
+      ],
+      "isCampaignBoss": {
+        "value": true,
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "locationId": "act1-clearfell",
+      "damageTypes": [
+        {
+          "type": "physical",
+          "evidence": {
+            "value": "Physical damage is listed for the campaign spike-explosion skill.",
+            "status": "documented",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+          }
+        },
+        {
+          "type": "fire",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No fire damage claim is established by this limited skill review."
+          }
+        },
+        {
+          "type": "cold",
+          "evidence": {
+            "value": "Cold damage is listed for campaign area and projectile skills.",
+            "status": "documented",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+          }
+        },
+        {
+          "type": "lightning",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No lightning damage claim is established by this limited skill review."
+          }
+        },
+        {
+          "type": "chaos",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No chaos damage claim is established by this limited skill review."
+          }
+        }
+      ],
+      "resistances": [
+        {
+          "damageType": "physical",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "An applicable campaign defense percentage has not been established; no zero is inferred."
+          }
+        },
+        {
+          "damageType": "fire",
+          "value": {
+            "value": null,
+            "status": "conflicted",
+            "kind": "fact",
+            "sourceIds": [
+              "db-clearfell",
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Clearfell, default boss and spectre/reservation views show different resistance values. A campaign percentage is not selected without reconciling those views."
+          }
+        },
+        {
+          "damageType": "cold",
+          "value": {
+            "value": null,
+            "status": "conflicted",
+            "kind": "fact",
+            "sourceIds": [
+              "db-clearfell",
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Clearfell, default boss and spectre/reservation views show different resistance values. A campaign percentage is not selected without reconciling those views."
+          }
+        },
+        {
+          "damageType": "lightning",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "An applicable campaign defense percentage has not been established; no zero is inferred."
+          }
+        },
+        {
+          "damageType": "chaos",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "An applicable campaign defense percentage has not been established; no zero is inferred."
+          }
+        }
+      ],
+      "weaknesses": [
+        {
+          "id": "beira-weakness-unreviewed",
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "An independently applicable weakness has not been established; do not derive one from an unselected resistance value."
+          }
+        }
+      ],
+      "mechanics": [
+        {
+          "id": "beira-cold-area-attack",
+          "description": {
+            "value": "The campaign skill record includes a cold area-damage attack.",
+            "status": "documented",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+          },
+          "trigger": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The source identifies the skill, but precise activation conditions and visual telegraphs were not established."
+          },
+          "response": {
+            "value": "Avoid remaining in damaging areas and consider cold resistance before the fight.",
+            "status": "uncertain",
+            "kind": "editorial-advice",
+            "sourceIds": [
+              "db-beira-campaign"
+            ],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Editorial preparation based on the sourced damage category and area flag; no timing, safe threshold or guaranteed avoidance is asserted."
+          }
+        }
+      ],
+      "warningIds": [
+        "beira-cold-area-damage"
+      ]
+    },
+    {
+      "id": "the-devourer",
+      "name": "The Devourer",
+      "identitySourceIds": [
+        "db-mud-burrow",
+        "db-treacherous-ground"
+      ],
+      "isCampaignBoss": {
+        "value": true,
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-mud-burrow"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "locationId": "act1-mud-burrow",
+      "damageTypes": [
+        {
+          "type": "physical",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The physical damage category has not been established for the Devourer."
+          }
+        },
+        {
+          "type": "fire",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The fire damage category has not been established for the Devourer."
+          }
+        },
+        {
+          "type": "cold",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The cold damage category has not been established for the Devourer."
+          }
+        },
+        {
+          "type": "lightning",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The lightning damage category has not been established for the Devourer."
+          }
+        },
+        {
+          "type": "chaos",
+          "evidence": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "The chaos damage category has not been established for the Devourer."
+          }
+        }
+      ],
+      "resistances": [
+        {
+          "damageType": "physical",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable physical resistance percentage was established for the Devourer; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "fire",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable fire resistance percentage was established for the Devourer; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "cold",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable cold resistance percentage was established for the Devourer; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "lightning",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable lightning resistance percentage was established for the Devourer; an omitted value does not mean zero."
+          }
+        },
+        {
+          "damageType": "chaos",
+          "value": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No applicable chaos resistance percentage was established for the Devourer; an omitted value does not mean zero."
+          }
+        }
+      ],
+      "weaknesses": [
+        {
+          "id": "devourer-weakness-unreviewed",
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No independently applicable weakness has been reviewed."
+          }
+        }
+      ],
+      "mechanics": [
+        {
+          "id": "devourer-mechanics-unreviewed",
+          "description": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Detailed campaign mechanics have not been reviewed for this encounter."
+          },
+          "trigger": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "Activation conditions and telegraphs have not been reviewed."
+          },
+          "response": {
+            "value": null,
+            "status": "unknown",
+            "kind": "fact",
+            "sourceIds": [],
+            "verifiedForVersion": null,
+            "checkedAt": "2026-10-16",
+            "note": "No encounter-specific response has been established."
+          }
+        }
+      ],
+      "warningIds": []
+    }
+  ],
+  "rewards": [
+    {
+      "id": "renly-opening-skill-gem",
+      "name": "Renly opening Uncut Skill Gem",
+      "identitySourceIds": [
+        "guide-encampment"
+      ],
+      "locationId": "act1-clearfell-encampment",
+      "handInLocationId": "act1-clearfell-encampment",
+      "benefit": {
+        "value": "An Uncut Skill Gem is described as an early reward from Renly.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "conditions": {
+        "value": "Speak to Renly after reaching Clearfell Encampment.",
+        "status": "uncertain",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The guide says to speak to Renly after entering town; all quest-state requirements are not independently verified."
+      },
+      "quantity": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The exact count has not been independently reviewed."
+      },
+      "level": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The guide does not establish a reviewed item or gem level."
+      },
+      "progressionRole": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-encampment"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "A route recommendation does not prove that collecting this reward is mandatory."
+      }
+    },
+    {
+      "id": "head-of-the-winter-wolf",
+      "name": "Head of the Winter Wolf",
+      "identitySourceIds": [
+        "guide-clearfell",
+        "db-clearfell"
+      ],
+      "locationId": "act1-clearfell",
+      "handInLocationId": null,
+      "benefit": {
+        "value": "Using the item grants a permanent +10% to cold resistance.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-clearfell",
+          "db-clearfell",
+          "db-act1-notes"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "conditions": {
+        "value": "Defeat Beira of the Rotten Pack, collect the Head of the Winter Wolf and use it.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-clearfell",
+          "db-act1-notes"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "quantity": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-clearfell",
+          "db-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "No exact item count is claimed."
+      },
+      "level": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-clearfell",
+          "db-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "No applicable reward level has been reviewed."
+      },
+      "progressionRole": {
+        "value": "optional",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-clearfell"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The guide explicitly describes proceeding to Grelwood while leaving Beira for later; this is distinct from its routing must/skip tags. Exact hotfix applicability is unverified."
+      }
+    },
+    {
+      "id": "treacherous-ground-reward",
+      "name": "Treacherous Ground: Uncut Support Gem and gold",
+      "identitySourceIds": [
+        "guide-clearfell",
+        "db-act1-quests",
+        "db-treacherous-ground"
+      ],
+      "locationId": "act1-mud-burrow",
+      "handInLocationId": "act1-clearfell-encampment",
+      "benefit": {
+        "value": "The optional quest offers an Uncut Support Gem and gold.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-clearfell",
+          "db-act1-quests"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "conditions": {
+        "value": "Defeat the Devourer in Mud Burrow, then speak to Renly in Clearfell Encampment to collect the quest reward.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-treacherous-ground"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "quantity": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "db-act1-quests",
+          "db-treacherous-ground"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "This record combines gem and gold rewards; no single quantity or verified gold amount is selected."
+      },
+      "level": {
+        "value": null,
+        "status": "conflicted",
+        "kind": "fact",
+        "sourceIds": [
+          "db-act1-notes",
+          "db-treacherous-ground"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The community area guide says Level 1, while the quest reward table says iLv4. These may describe different concepts; no conversion or exact level is assumed."
+      },
+      "progressionRole": {
+        "value": "optional",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-act1-quests"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      }
+    }
+  ],
+  "pointsOfInterest": [
+    {
+      "id": "tree-of-souls",
+      "name": "The Tree of Souls",
+      "identitySourceIds": [
+        "guide-grelwood",
+        "db-grelwood"
+      ],
+      "locationId": "act1-grelwood",
+      "description": {
+        "value": "A campaign point of interest in Grelwood.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-grelwood"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "benefit": {
+        "value": "The guide associates the Tree of Souls with a waypoint.",
+        "status": "uncertain",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-grelwood"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "The guide places a waypoint here, but exact interaction benefits are not independently reviewed."
+      },
+      "conditions": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-grelwood",
+          "db-grelwood"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Quest interactions and unlock conditions are outside this limited review."
+      },
+      "progressionRole": {
+        "value": null,
+        "status": "unknown",
+        "kind": "fact",
+        "sourceIds": [
+          "guide-grelwood",
+          "db-grelwood"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Its full progression requirements are not established."
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "id": "beira-cold-area-damage",
+      "locationId": "act1-clearfell",
+      "encounterId": "beira-of-the-rotten-pack",
+      "title": "Beira: cold area damage",
+      "threat": {
+        "value": "Beira has a campaign skill that deals cold area damage.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-beira-campaign"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Documented by the cited source. No relevant change was identified in the reviewed patch notes; exact 0.5.5e applicability is not independently established."
+      },
+      "trigger": {
+        "value": "Being hit inside that skill’s damaging area.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-beira-campaign"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Derived directly from the campaign skill’s cold-damage and area-damage properties; precise activation cues remain unknown."
+      },
+      "consequence": {
+        "value": "A hit deals cold damage. If the character dies, its Hardcore run ends.",
+        "status": "documented",
+        "kind": "fact",
+        "sourceIds": [
+          "db-beira-campaign",
+          "patch-055"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Damage category is sourced; Hardcore death follows the official league rules. No lethal damage amount, freeze behavior, safe life total or survival guarantee is established."
+      },
+      "avoidanceAdvice": {
+        "value": "Consider cold resistance and move out of damaging areas instead of continuing to attack.",
+        "status": "uncertain",
+        "kind": "editorial-advice",
+        "sourceIds": [
+          "db-beira-campaign"
+        ],
+        "verifiedForVersion": null,
+        "checkedAt": "2026-10-16",
+        "note": "Editorial advice based on damage/area properties; effectiveness and exact telegraphs are unverified."
+      },
+      "sourceIds": [
+        "db-beira-campaign",
+        "patch-055"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "guide-riverbank",
+      "title": "Michael Malura campaign guide: act1-riverbank",
+      "publisher": "Michael Malura",
+      "url": "https://github.com/maluramichael/poe2overlay/blob/07b241f30f0c0b3b47959030e08c314731f3cc2e/ui/guide.json",
+      "locator": "/steps/0: English text, hint and notes; excludes /steps/0/notes/0. Retained candidate: content/candidates/act1-opening.poe2overlay.json; upstream SHA-256 f62b30241797911fe7005424220dcfae426f8881ae6b4e157c1ce2f376a6da24.",
+      "sourceType": "community-guide",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": "0.5.5",
+      "applicabilityNote": "Pinned commit 07b241f30f0c0b3b47959030e08c314731f3cc2e; source declares 0.5.5 (Forbidden Rites), updated 2026-09-30. Focused intervening patch review found no listed change to the used route/reward claims. Exact hotfix compatibility is not independently verified. Campaign Ritual variants are not covered by this guide.",
+      "reuseNote": "MIT-licensed pinned GitHub snapshot, not the external live service. Original summaries; no numerical survival guarantee or assets adopted.\n\nMIT License\n\nCopyright (c) 2026 Michael Malura\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    },
+    {
+      "id": "guide-encampment",
+      "title": "Michael Malura campaign guide: act1-clearfell-encampment",
+      "publisher": "Michael Malura",
+      "url": "https://github.com/maluramichael/poe2overlay/blob/07b241f30f0c0b3b47959030e08c314731f3cc2e/ui/guide.json",
+      "locator": "/steps/1: English text, hint and notes; excludes /steps/0/notes/0. Retained candidate: content/candidates/act1-opening.poe2overlay.json; upstream SHA-256 f62b30241797911fe7005424220dcfae426f8881ae6b4e157c1ce2f376a6da24.",
+      "sourceType": "community-guide",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": "0.5.5",
+      "applicabilityNote": "Pinned commit 07b241f30f0c0b3b47959030e08c314731f3cc2e; source declares 0.5.5 (Forbidden Rites), updated 2026-09-30. Focused intervening patch review found no listed change to the used route/reward claims. Exact hotfix compatibility is not independently verified. Campaign Ritual variants are not covered by this guide.",
+      "reuseNote": "MIT-licensed pinned GitHub snapshot, not the external live service. Original summaries; no numerical survival guarantee or assets adopted.\n\nMIT License\n\nCopyright (c) 2026 Michael Malura\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    },
+    {
+      "id": "guide-clearfell",
+      "title": "Michael Malura campaign guide: act1-clearfell",
+      "publisher": "Michael Malura",
+      "url": "https://github.com/maluramichael/poe2overlay/blob/07b241f30f0c0b3b47959030e08c314731f3cc2e/ui/guide.json",
+      "locator": "/steps/2: English text, hint and notes; excludes /steps/0/notes/0. Retained candidate: content/candidates/act1-opening.poe2overlay.json; upstream SHA-256 f62b30241797911fe7005424220dcfae426f8881ae6b4e157c1ce2f376a6da24.",
+      "sourceType": "community-guide",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": "0.5.5",
+      "applicabilityNote": "Pinned commit 07b241f30f0c0b3b47959030e08c314731f3cc2e; source declares 0.5.5 (Forbidden Rites), updated 2026-09-30. Focused intervening patch review found no listed change to the used route/reward claims. Exact hotfix compatibility is not independently verified. Campaign Ritual variants are not covered by this guide.",
+      "reuseNote": "MIT-licensed pinned GitHub snapshot, not the external live service. Original summaries; no numerical survival guarantee or assets adopted.\n\nMIT License\n\nCopyright (c) 2026 Michael Malura\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    },
+    {
+      "id": "guide-grelwood",
+      "title": "Michael Malura campaign guide: act1-grelwood",
+      "publisher": "Michael Malura",
+      "url": "https://github.com/maluramichael/poe2overlay/blob/07b241f30f0c0b3b47959030e08c314731f3cc2e/ui/guide.json",
+      "locator": "/steps/3: English text, hint and notes; excludes /steps/0/notes/0. Retained candidate: content/candidates/act1-opening.poe2overlay.json; upstream SHA-256 f62b30241797911fe7005424220dcfae426f8881ae6b4e157c1ce2f376a6da24.",
+      "sourceType": "community-guide",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": "0.5.5",
+      "applicabilityNote": "Pinned commit 07b241f30f0c0b3b47959030e08c314731f3cc2e; source declares 0.5.5 (Forbidden Rites), updated 2026-09-30. Focused intervening patch review found no listed change to the used route/reward claims. Exact hotfix compatibility is not independently verified. Campaign Ritual variants are not covered by this guide.",
+      "reuseNote": "MIT-licensed pinned GitHub snapshot, not the external live service. Original summaries; no numerical survival guarantee or assets adopted.\n\nMIT License\n\nCopyright (c) 2026 Michael Malura\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    },
+    {
+      "id": "db-riverbank",
+      "title": "PoE2DB: The Riverbank",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/The_Riverbank",
+      "locator": "The Riverbank Attr: Act, Connected, Boss; no numerical monster table imported.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-encampment",
+      "title": "PoE2DB: Clearfell Encampment",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/Clearfell_Encampment",
+      "locator": "Clearfell Encampment Attr: Town and Connected; listing later connections does not establish opening return access.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-clearfell",
+      "title": "PoE2DB: Clearfell",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/Clearfell",
+      "locator": "Clearfell Attr: Connected and Boss; Beira objective: Head of the Winter Wolf grants cold resistance.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-mud-burrow",
+      "title": "PoE2DB: Mud Burrow",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/Mud_Burrow",
+      "locator": "Mud Burrow Attr: Connected = Clearfell; Boss = The Devourer.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-grelwood",
+      "title": "PoE2DB: The Grelwood",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/The_Grelwood",
+      "locator": "The Grelwood Attr: Connected; Objectives: The Tree of Souls. External destinations are informational boundaries only.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-act1-quests",
+      "title": "PoE2DB: Act 1",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/Act_1",
+      "locator": "Act 1 Quest: Treacherous Ground, Optional, Uncut Support Gem and gold; Secrets in the Dark route context. Opening five rows of the area/connection list only.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-act1-notes",
+      "title": "PoE2DB: Act 1",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/Act_1",
+      "locator": "Community guide sections: The Riverbank, Clearfell Encampment, Clearfell, Mud Burrow, The Grelwood. Mud Burrow prose labels the gem Level 1; no prose is copied.",
+      "sourceType": "community-guide",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-treacherous-ground",
+      "title": "PoE2DB: Treacherous Ground",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/Treacherous_Ground",
+      "locator": "Quest stages Find/Search Mud Burrow, Kill the Devourer, Talk to Renly: Area Clearfell Encampment; Normal reward table labels Uncut Support Gem iLv4. No dialogue imported.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Live community-maintained record reviewed for the opening campaign only. No exact patch archive or publication date is declared; applicability to 0.5.5e remains individually uncertain.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "db-beira-campaign",
+      "title": "PoE2DB: Beira of the Rotten Pack",
+      "publisher": "PoE2DB",
+      "url": "https://poe2db.tw/us/Beira_of_the_Rotten_Pack",
+      "locator": "Campaign tab metadata UrchinHagBossCampaignSTANDALONE (second monster block); HagBossDetonateDead: Cold, Area Damage; HagBossIceSpear: Cold projectile; GSCarrionCroneSpikeExplode: Physical. No base damage, timing, resistance table, script or code imported.",
+      "sourceType": "extracted-game-data",
+      "accessedAt": "2026-10-16",
+      "publishedAt": null,
+      "applicableGameVersion": null,
+      "applicabilityNote": "Campaign-specific metadata is explicitly distinguished from generic UrchinHagBoss and spectre/reservation views. Skill categories are sourced; exact patch applicability, real hit amounts, activation telegraphs and Ritual variants remain unverified.",
+      "reuseNote": "Occasional consultation of a small factual subset; original summaries only. No wiki prose, game dialogue, AI/skill code, raw tables, images or assets are redistributed. The wiki CC BY-NC-SA notice is not treated as a grant for GGG-derived tables. No mirror, ongoing collection or database export is created; this is not a general reuse license for the site."
+    },
+    {
+      "id": "patch-055",
+      "title": "GGG: 0.5.5 Patch Notes",
+      "publisher": "Grinding Gear Games",
+      "url": "https://www.pathofexile.com/forum/view-thread/4000864",
+      "locator": "Forbidden Rites event league: campaign Rituals and boss waves; Hardcore variations are parented to Standard equivalents on death.",
+      "sourceType": "official-patch",
+      "accessedAt": "2026-10-16",
+      "publishedAt": "2026-09-03",
+      "applicableGameVersion": "0.5.5",
+      "applicabilityNote": "Official changes for the named patch. Absence of a listed change is supporting context, not independent proof that all source claims apply to the target hotfix.",
+      "reuseNote": "Original factual summary and citation only; no patch-note prose or game assets reproduced."
+    },
+    {
+      "id": "patch-055b",
+      "title": "GGG: 0.5.5b Patch Notes",
+      "publisher": "Grinding Gear Games",
+      "url": "https://www.pathofexile.com/forum/view-thread/4004106",
+      "locator": "Complete staff patch list: no listed change to the five-area opening route or used reward claims.",
+      "sourceType": "official-patch",
+      "accessedAt": "2026-10-16",
+      "publishedAt": "2026-09-11",
+      "applicableGameVersion": "0.5.5b",
+      "applicabilityNote": "Official changes for the named patch. Absence of a listed change is supporting context, not independent proof that all source claims apply to the target hotfix.",
+      "reuseNote": "Original factual summary and citation only; no patch-note prose or game assets reproduced."
+    },
+    {
+      "id": "patch-055c",
+      "title": "GGG: 0.5.5c Patch Notes",
+      "publisher": "Grinding Gear Games",
+      "url": "https://www.pathofexile.com/forum/view-thread/4006357",
+      "locator": "Complete staff patch list: later campaign/quest fixes and Ritual fixes; no listed change to the five-area opening route or used reward claims.",
+      "sourceType": "official-patch",
+      "accessedAt": "2026-10-16",
+      "publishedAt": "2026-09-18",
+      "applicableGameVersion": "0.5.5c",
+      "applicabilityNote": "Official changes for the named patch. Absence of a listed change is supporting context, not independent proof that all source claims apply to the target hotfix.",
+      "reuseNote": "Original factual summary and citation only; no patch-note prose or game assets reproduced."
+    },
+    {
+      "id": "patch-055d",
+      "title": "GGG: 0.5.5d Patch Notes",
+      "publisher": "Grinding Gear Games",
+      "url": "https://www.pathofexile.com/forum/view-thread/4008534",
+      "locator": "Complete staff patch list: Azmeri/Ritual and other fixes; no listed change to the used opening route/reward claims.",
+      "sourceType": "official-patch",
+      "accessedAt": "2026-10-16",
+      "publishedAt": "2026-09-28",
+      "applicableGameVersion": "0.5.5d",
+      "applicabilityNote": "Official changes for the named patch. Absence of a listed change is supporting context, not independent proof that all source claims apply to the target hotfix.",
+      "reuseNote": "Original factual summary and citation only; no patch-note prose or game assets reproduced."
+    },
+    {
+      "id": "patch-055e",
+      "title": "GGG: 0.5.5e Patch Notes",
+      "publisher": "Grinding Gear Games",
+      "url": "https://www.pathofexile.com/forum/view-thread/4009785",
+      "locator": "Five staff patch entries: texture quality, Ritual activation, Tomb access, area load speed and hideout art. No listed change to used opening route/reward claims.",
+      "sourceType": "official-patch",
+      "accessedAt": "2026-10-16",
+      "publishedAt": "2026-10-05",
+      "applicableGameVersion": "0.5.5e",
+      "applicabilityNote": "Official changes for the named patch. Absence of a listed change is supporting context, not independent proof that all source claims apply to the target hotfix.",
+      "reuseNote": "Original factual summary and citation only; no patch-note prose or game assets reproduced."
+    }
+  ]
+}

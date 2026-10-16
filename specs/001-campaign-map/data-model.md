@@ -17,6 +17,14 @@ relationships. Array order defines deliberate reading order, not identity.
 
 ## Evidence-bearing values
 
+Acquisition inputs are separate from the runtime model. `content/acquisition.lock.json` pins
+the audited transport/license, immutable upstream revision, content hashes, source version,
+and excluded locators. `content/candidates/act1-opening.poe2overlay.json` retains source metadata
+and the MIT notice with opening editorial text. It is unreviewed, has no `reviewedAt`, and is
+not a ContentSnapshot. Integrity does not establish facts or target-version compatibility.
+Authoring/publication still require the evidence and invariants below. Candidates are never
+shipped by Vite.
+
 Use one small EvidenceValue shape for gameplay properties that can be unknown:
 
 | Field | Meaning |
@@ -91,8 +99,9 @@ remain in CampaignSegment.boundaries. Duplicate relationships and self-loops are
 
 ## Encounter
 
-Fields: id, name, identitySourceIds, locationId, damageTypes, resistances, weaknesses, mechanics,
-warningIds.
+Fields: id, name, identitySourceIds, isCampaignBoss, locationId, damageTypes, resistances,
+weaknesses, mechanics, warningIds. `isCampaignBoss` is an evidence-bearing boolean so publication
+can verify the boss minimum without treating an arbitrary encounter as a boss.
 
 Damage types are explicit physical, fire, cold, lightning, or chaos evidence entries.
 Resistances are separately evidenced properties; include a percentage only if applicable to the
@@ -107,8 +116,9 @@ claim is marked documented.
 ## Reward and PointOfInterest
 
 Reward fields: id, name, identitySourceIds, locationId, handInLocationId (nullable), benefit,
-conditions, progressionRole. Optional destinations can point to an included town for hand-in.
-Known acquisition conditions remain separate from the reward's unknown quantity or level.
+conditions, quantity, level, progressionRole. Quantity and level are separate EvidenceValues,
+so their unknown values do not erase known acquisition conditions. Optional destinations can
+point to an included town for hand-in.
 
 PointOfInterest fields: id, name, identitySourceIds, locationId, description, benefit,
 conditions, progressionRole. A point of interest may have no known material reward; its

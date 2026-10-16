@@ -36,6 +36,13 @@ resolves references and combines them into the single delivery file. It verifies
 five-location release list, graph, documented claims, metadata, and provenance before publishing.
 Source review establishes factual correctness; validation establishes document consistency.
 
+An explicit maintenance import may acquire licensed candidate text through the audited GitHub
+Contents API using `content/acquisition.lock.json`. Its output under `content/candidates/` is
+not a delivery document: it keeps source 0.5.5 separate from target 0.5.5e, embeds the license,
+has no review date, and cannot satisfy this endpoint contract. No candidate, proposal, or
+permission check is automatically promoted to publication. Build-time candidate integrity
+checks are offline; reviewed content still needs the full graph, provenance, and release minima.
+
 Serve the snapshot with revalidation rather than an indefinitely cached stable URL. Deploy
 HTML, application assets, and the snapshot as one release. Hashed application/image assets may
 be cached immutably. Never mix different snapshot versions within a loaded session. A later

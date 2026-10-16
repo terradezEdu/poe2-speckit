@@ -26,13 +26,18 @@ pending. This plan creates no application code or test implementation.
 
 ## Technical Context
 
-**Language/Version**: TypeScript 7.0, strict mode; React 19.3; Node 24 LTS; npm lockfile.
+**Language/Version**: TypeScript 6.0, strict mode; React 19.3; Node 24 LTS; npm lockfile.
 Use erasable TypeScript for Node-side content scripts.
 
 **Primary Dependencies**: Vite 8.3 with its compatible React plugin; d3-zoom 3 and d3-selection 3;
 Zod 4.6; native CSS. Development dependencies: compatible Vitest, Playwright Test, TypeScript,
-React/D3 types, and standard React/TypeScript lint tooling. Resolve stable exact versions and
-commit package-lock.json during implementation; dependency compatibility is not yet installed.
+React/D3 types, and standard React/TypeScript lint tooling. The stable versions checked on
+2026-10-16 include Vite 8.3.4, `@vitejs/plugin-react` 6.1.2, React 19.3.1, TypeScript 7.0.2,
+Zod 4.6.7, Vitest 5.0.5, and Playwright Test 1.64.1. Dependency resolution showed that the
+current `typescript-eslint` 8.71.2 peer range is `>=4.8.4 <6.1.0`, so TypeScript 7.0.2 is not
+compatible with the planned lint tool. The implementation therefore uses the compatible stable
+TypeScript 6.0 line; npm's lockfile records the exact resolved versions. Node 24.21.0 satisfies
+the Vite, Vitest, and Playwright engine ranges.
 
 **Storage**: Versioned campaign JSON, separate layout JSON, asset provenance, and a generated
 same-origin JSON snapshot. Transient browser selection/camera only; no database, cookies,
@@ -101,14 +106,19 @@ tasks.md is produced by the subsequent $speckit-tasks command and is not generat
 
 ### Source Code (repository root)
 
-Planned layout only; these application files do not exist yet.
+Setup, schemas, validators, licensed-source candidate acquisition and reviewed T013 authored
+content exist. Feature components, layout/provenance and delivery generation remain pending.
 
 ```text
 content/
+├── acquisition.lock.json
+├── candidates/act1-opening.poe2overlay.json  (licensed, unreviewed; never served)
 ├── act1-opening.json
 ├── act1-opening.layout.json
 └── assets.json
 scripts/
+├── acquire-content.ts
+├── lib/acquire-guide.ts
 ├── validate-content.ts
 └── build-content.ts
 src/
@@ -156,6 +166,17 @@ Validate core identity/graph strictly; isolate malformed unrelated optional cate
 runtime. Distinguish unavailable content from unknown gameplay facts. Build validation rejects
 all invalid release records. Published details and source identities remain readable when
 external source pages are unavailable. No remote facts are fetched on selection or during builds.
+
+Licensed editorial candidates are acquired separately through `scripts/acquire-content.ts`.
+The audited source is Michael Malura's MIT-distributed `poe2overlay` JSON, fetched only through
+GitHub's documented Contents API using an immutable commit and pinned license/data hashes.
+The importer checks the license first, preserves its notice, excludes unsupported safety
+guarantees and assets, and stages only the opening text. Source 0.5.5 is not promoted to verified
+0.5.5e applicability. `content:acquisition:check` verifies local integrity during builds; neither
+normal imports nor update proposals publish a ContentSnapshot. T013's authored document now
+combines the pinned guide with one scoped PoE2DB factual review for the graph, Mud Burrow reward
+and a sourced Beira Hardcore threat. Individual version/access/numerical uncertainty remains
+explicit; the acquisition candidate is not automatically promoted. See research.md for evidence.
 
 ### Interaction and rendering
 
